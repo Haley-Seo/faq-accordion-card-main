@@ -1,0 +1,116 @@
+html,
+body {
+  min-height: 100%;
+}
+body {
+  height: 100vh;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  color: hsl(240, 6%, 50%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  height: 100%;
+}
+
+.img-small {
+  position: absolute;
+  left: 0px;
+  top: 330px;
+  z-index: 10;
+}
+.content-wrapper {
+  width: 80%;
+  background: #fff;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 20px;
+}
+
+.content {
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  min-width: 350px;
+  padding: 50px;
+  margin: auto;
+  vertical-align: top;
+  overflow: hidden;
+}
+.img-big {
+  position: relative;
+  left: -150px;
+  z-index: 5;
+  object-fit: cover;
+}
+.img-big-bg {
+  position: absolute;
+  top: -300px;
+  left: -600px;
+  z-index: 3;
+  /* overflow: hidden; */
+}
+
+h1 {
+  color: hsl(237, 12%, 33%);
+}
+.question {
+  border-bottom: hsl(240, 5%, 91%) 1px solid;
+}
+
+.accordion {
+  background-color: #fff;
+  color: hsl(240, 6%, 50%);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  /* background-color: #ccc; */
+  color: hsl(14, 88%, 65%);
+}
+
+.accordion.active {
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+}
+.accordion:after {
+  /* + */
+  content: '\002B';
+  color: hsl(240, 6%, 50%);
+  font-weight: 700;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  /* - */
+  content: '\2212';
+  color: hsl(240, 6%, 50%);
+  font-weight: 700;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.attribution {
+  width: 100%;
+  position: relative;
+  bottom: 50px;
+  margin: auto;
+  text-align: center;
+  font-size: 10px;
+  color: hsl(240, 6%, 50%);
+}
